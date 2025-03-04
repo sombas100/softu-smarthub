@@ -6,7 +6,7 @@ function App() {
     <>
       <Banner />
       <Navbar />
-      <div className="text-3xl underline">Hello world</div>
+      <div className="text-3xl underline mt-10">Hello world</div>
     </>
   );
 }
