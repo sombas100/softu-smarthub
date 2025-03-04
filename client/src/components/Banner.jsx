@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-center bg-zinc-600 h-16">
+    <section className="flex items-center justify-center bg-zinc-600 h-16 md:px-4">
       <div className="flex items-center justify-center gap-3">
         <button
           style={{ padding: "5px" }}
@@ -12,10 +12,10 @@ const Banner = () => {
         </button>
         <span className="text-white font-bold">UP TO 20% OFF</span>
         <p className="text-zinc-300 text-md">
-          Use CODE Softu | Limited time offer
+          Use CODE: Softu100 | Limited time offer
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
