@@ -1,5 +1,5 @@
 import React from "react";
-import softuLogo from "../../assets/Softu.png";
+import softuLogo from "../../assets/softu.png";
 
 const SoftuBanner = () => {
   return (
