@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navLinks } from "../constants/links";
-import logo from "../assets/smarthub.png";
+import logo from "../assets/softu.png";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(
