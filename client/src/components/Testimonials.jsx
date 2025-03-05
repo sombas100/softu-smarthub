@@ -42,27 +42,25 @@ const Testimonials = () => {
           Hear from our satisfied users who have embraced smart living.
         </p>
 
-        {/* Testimonials Grid */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className="p-10 bg-white border h-64 border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 text-center"
             >
-              {/* User Avatar */}
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-16 h-16 rounded-full mx-auto mb-4"
               />
-              {/* User Name & Role */}
+
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                 {testimonial.name}
               </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {testimonial.role}
               </p>
-              {/* User Feedback */}
+
               <p className="mt-4 text-gray-700 dark:text-gray-300">
                 "{testimonial.feedback}"
               </p>

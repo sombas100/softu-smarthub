@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Contact from "./components/Contact";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -16,6 +17,7 @@ function App() {
       <SoftuBanner />
       <Testimonials />
       <Pricing />
+      <Contact />
     </>
   );
 }
