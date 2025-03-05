@@ -2,7 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section style={{ marginTop: "80px" }} className="py-16  dark:bg-gray-900">
+    <section
+      id="contact"
+      style={{ marginTop: "80px" }}
+      className="py-16  dark:bg-gray-900"
+    >
       <div className="layout max-w-screen-xl mx-auto px-6">
         {/* Contact Section Container */}
         <div className="flex flex-col md:flex-row items-center gap-10">
@@ -23,7 +27,7 @@ const Contact = () => {
             </p>
             <p className="mt-4 font-semibold text-gray-700 dark:text-gray-300">
               📧 Email: support@softu.com <br />
-              📞 Phone: +1 234 567 890
+              📞 Phone: +447 234 567 890
             </p>
           </div>
 

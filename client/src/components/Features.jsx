@@ -4,6 +4,7 @@ import Card from "./ui/Card";
 const Features = () => {
   return (
     <section
+      id="features"
       style={{ marginTop: "110px", paddingBottom: "80px" }}
       className="py-12 bg-gray-100 dark:bg-gray-900"
     >

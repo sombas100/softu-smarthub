@@ -3,6 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <section
+      id="pricing"
       style={{ paddingBottom: "80px" }}
       className="py-16 bg-gray-100 dark:bg-gray-900"
     >

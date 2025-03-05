@@ -2,7 +2,10 @@ import React from "react";
 
 const Card = ({ children }) => {
   return (
-    <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div
+      style={{ paddingBottom: "20px" }}
+      className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+    >
       <a href="#">
         <h5
           style={{ padding: "14px" }}
@@ -22,7 +25,7 @@ const Card = ({ children }) => {
 
       <span
         style={{ marginTop: "6px", padding: "12px" }}
-        className="text-blue-500 mt-8 font-bold hover:underline hover:cursor-pointer transition-all ease-in"
+        className="text-blue-600 font-semibold cursor-pointer hover:scale-110 transition-transform duration-300 hover:underline inline-block mt-4"
       >
         Learn More &rarr;
       </span>

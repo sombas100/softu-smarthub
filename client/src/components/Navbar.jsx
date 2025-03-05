@@ -57,7 +57,7 @@ const Navbar = () => {
                   key={i}
                   className="block py-2 px-3 md:p-0 text-black rounded-sm md:bg-transparent md:text-black md:dark:text-blue-500 hover:cursor-pointer hover:text-blue-400 transition-all ease-out"
                 >
-                  {link.name}
+                  <a href={link.to}>{link.name}</a>
                 </li>
               ))}
             </ul>
