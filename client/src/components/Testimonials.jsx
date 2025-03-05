@@ -51,7 +51,7 @@ const Testimonials = () => {
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-16 h-16 rounded-full mx-auto mb-4"
+                className="w-16 h-16 rounded-full mx-auto mb-4 hover:scale-150 transition-transform duration-300 hover:cursor-pointer"
               />
 
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
