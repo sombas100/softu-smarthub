@@ -2,6 +2,19 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.dark-mode {
+  background-color: #1a202c; 
+  color: white;
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,3 +30,6 @@ html {
   margin: auto;
   padding: 15px;
 }
+
+
+

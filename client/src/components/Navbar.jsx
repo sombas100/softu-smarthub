@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { navLinks } from "../constants/links";
 import logo from "../assets/smarthub.png";
 
 const Navbar = () => {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
+
+  const toggleDarkMode = () => {
+    if (darkMode) {
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+    }
+    setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
   return (
     <>
       <nav className="layout bg-white border-gray-200 dark:bg-gray-900 shadow">
@@ -61,6 +83,18 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-full translate-x-12 bg-gray-200 hover:cursor-pointer dark:bg-gray-700 transition"
+            >
+              {darkMode ? (
+                <span className="text-yellow-400 text-lg font-bold">☀️</span>
+              ) : (
+                <span className="text-gray-800 dark:text-gray-200 text-lg font-bold">
+                  🌙
+                </span>
+              )}
+            </button>
           </div>
         </div>
       </nav>
