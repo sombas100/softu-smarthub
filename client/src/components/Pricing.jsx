@@ -31,6 +31,7 @@ const Pricing = () => {
                 Basic
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mt-2">
+                <span className="line-through text-red-500">£13.99</span> |
                 £9.99 / month
               </p>
               <ul className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
@@ -57,6 +58,7 @@ const Pricing = () => {
                 Pro
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mt-2">
+                <span className="line-through text-red-500">£23.99</span> |
                 £19.99 / month
               </p>
               <ul className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
@@ -82,7 +84,9 @@ const Pricing = () => {
               >
                 Deluxe
               </h3>
-              <p className="mt-2">£29.99 / month</p>
+              <p className="mt-2">
+                <span className="line-through">£35.99</span> | £29.99 / month
+              </p>
               <ul className="mt-4 space-y-2">
                 <li>✔ Everything in Pro</li>
                 <li>✔ AI-Powered Automation</li>
